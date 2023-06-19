@@ -61,8 +61,8 @@ span {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  gap: 20rem;
-  padding: 11.2rem 0;
+  gap: 10rem;
+  padding-top: 5rem;
   color: #f8f8f8;
 }
 
