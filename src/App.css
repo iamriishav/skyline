@@ -52,7 +52,7 @@ span {
 
 .main {
   min-height: 100vh;
-  backdrop-filter: blur(.5rem);
+  backdrop-filter: blur(0.5rem);
 }
 
 .container {
@@ -80,6 +80,11 @@ span {
   outline: none;
   background-color: rgba(0, 0, 0, 0.5);
   color: #f8f8f8;
+  transition: 0.2s ease-in-out;
+}
+
+.container > .search_box:hover > input {
+  transform: scale(1.1);
 }
 
 .container > .main_data {
@@ -87,6 +92,15 @@ span {
   padding: 1rem 2rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.container > .main_data:hover {
+  transform: scale(0.95);
+}
+
+.container > .main_data > .date > p > span {
+  font-size: 2rem;
 }
 
 .container > .secondary_data {
@@ -104,6 +118,11 @@ span {
   padding: 1rem 2rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.container > .secondary_data > *:hover {
+  transform: scale(0.95);
 }
 
 .icon {
@@ -112,10 +131,6 @@ span {
 
 .data {
   font-size: 3rem;
-}
-
-.container > .main_data > .date > p > span {
-  font-size: 2rem;
 }
 
 @media only screen and (max-width: 1180px) {
