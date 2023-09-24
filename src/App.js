@@ -78,7 +78,7 @@ function App() {
                   &nbsp;&nbsp;&nbsp;
                   {data.main ? (
                     <span>
-                      {data.main.temp_max.toFixed()}°c&nbsp;/&nbsp;
+                      {data.main.temp_max.toFixed()}°c&nbsp;/&nbsp; 
                       {data.main.temp_min.toFixed()}°c
                     </span>
                   ) : null}
